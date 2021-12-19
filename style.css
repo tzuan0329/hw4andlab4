@@ -1,0 +1,17 @@
+	.lefttext{text-align: left;}
+	.panel{width: 25%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  border: black solid 2px;
+		  padding: 6px;
+		  background-color: lightgrey;}
+	.resultborder{border-style: ridge;
+				  width:270px;height:30px;
+				  font-size: 130%;}
+	#button{width:135px;height:30px;
+				 background-color:saddlebrown;
+				 opacity: 0.8;}
+	#button:hover{background-color: burlywood;}
+	.font{font-family: cursive;}
+
+
