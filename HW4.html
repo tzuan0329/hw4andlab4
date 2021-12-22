@@ -17,9 +17,11 @@
 					<button id = "button">Play</button>
 				</p>
 			</div>
-			<div class="resultborder">
-				<strong id="result">Result</strong>
-			</div><br>
+			<table class="resultborder" id="result">
+				<tr>
+					<th>Result</th>
+				</tr>	
+			</table><br>
 		</div>
 	</div>
 	<script>
@@ -29,6 +31,7 @@
 		var result;
 		var min = 1;
 		var max = 100;
+		var table;
 		button = document.getElementById("button");
 		button.addEventListener("click",start);
 		button.addEventListener("click",addElement)
@@ -43,10 +46,14 @@
 				}
 				result = min+"-"+max
 			}else{
-				alert("The number is "+rand);
+				alert("The number is "+rand+"!! Clear up to play again.");
+				return;
 			}
-			document.getElementById("result").innerHTML="Result "+result;
+			table = document.getElementById("result")
+			let row = table.insertRow();
+			row.insertCell(0).innerHTML = min+"-"+max;
 		}
+
 	</script>
 </body>
 </html>
